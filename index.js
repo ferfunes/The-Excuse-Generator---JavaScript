@@ -1,4 +1,8 @@
 
+window.onload = () => {
+    document.querySelector("#excuse").innerHTML = generateExcuse();
+}
+let generateExcuse = () =>{
 
 var who = ['the dog','my granma','his turtle','my bird'];
 var what = ['eat','pissed','crushed','broked'];
@@ -10,4 +14,6 @@ var whatIndex = Math.floor(Math.random() * what.length);
 var whenIndex = Math.floor(Math.random() * when.length);
 var whereIndex = Math.floor(Math.random() * where.length);
 
-console.log(who[whoIndex] + ' ' + what[whatIndex] + ' ' + when[whenIndex] + ' ' + where[whereIndex]);
+    return (who[whoIndex] + ' ' + what[whatIndex] + ' ' + when[whenIndex] + ' ' + where[whereIndex]);
+
+}
